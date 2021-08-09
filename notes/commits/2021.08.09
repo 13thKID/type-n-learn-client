@@ -1,0 +1,12 @@
+Upgraded validation
+
+1. Upgraded validation aspect of the applicaiton
+via:
+  1.1 Universal Error.vue component, which accepts
+  the instance of vuelidate field
+2. Created registration form and compatible
+registration service for the users.
+3. Authentication can be carried out in two ways:
+  3.1 Via automatically passed http-only cookie,
+  received on login / register
+  3.2 Via token passed in the auth-header

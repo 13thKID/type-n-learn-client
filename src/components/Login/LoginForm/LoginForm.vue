@@ -10,7 +10,7 @@
       <input class="uk-input" type="text" placeholder="Password" name="password" v-model="credentials.password">
     </div>
     <div class="uk-margin uk-flex uk-flex-center">
-      <button class="uk-button uk-button-default" @click="logIn(credentials)">LogIN</button>
+      <button class="uk-button uk-button-default" @click="login(credentials)">LogIN</button>
     </div>
   </div>
 </template>
@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     ...mapActions([
-      'logIn'
+      'login'
     ])
   }
 }

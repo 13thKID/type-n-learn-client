@@ -6,8 +6,11 @@
           <div class="nav">
             <router-link :to="{name: 'Home'}">Home</router-link>
           </div>
-          <router-link :to="{name: 'Login'}" class="uk-button uk-button-default uk-margin-medium-left">Login
-          </router-link>
+          <div>
+            <button class="uk-button uk-button-primary" @click="validateToken">VERIFY</button>
+            <router-link :to="{name: 'Login'}" class="uk-button uk-button-default uk-margin-medium-left">Login
+            </router-link>
+          </div>
         </div>
       </div>
     </div>
@@ -29,12 +32,13 @@ import { mapActions } from 'vuex'
 export default {
   methods: {
     ...mapActions([
-      'getPublicSets'
+      'getPublicSets',
+      'validateToken'
     ])
   },
   mounted () {
     this.getPublicSets()
-    // this.$router.push('/text-input')
+    this.$router.push('/register')
   }
 }
 

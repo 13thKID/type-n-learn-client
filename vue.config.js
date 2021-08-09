@@ -4,7 +4,8 @@ module.exports = {
   publicPath: './',
   lintOnSave: true,
   devServer: {
-    host: 'localhost'
+    host: 'localhost',
+    port: 8080
   },
   chainWebpack: config => {
     if (config.plugins.has('extract-css')) {
